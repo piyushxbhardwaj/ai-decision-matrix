@@ -17,22 +17,20 @@ This repository provides a comprehensive technical overview and an interactive l
 ---
 
 ## Key Features & Deliverables
-*   **[Core Report (AI_Decision_Matrix_2026.md)](file:///d:/Project/AI%20Decision%20Matrix/AI_Decision_Matrix_2026.md)**: 5-section consulting-grade analysis detailing foundation LLMs, coding models, agentic workflows, media models, and enterprise deployment platforms.
-*   **[Print-Ready PDF Report (AI_Decision_Matrix_2026.pdf)](file:///d:/Project/AI%20Decision%20Matrix/AI_Decision_Matrix_2026.pdf)**: Professionally typeset PDF version of the core report.
-*   **[Technical Bibliography (research_sources.md)](file:///d:/Project/AI%20Decision%20Matrix/research_sources.md)**: Complete list of API endpoints, academic literature, and testing benchmarks.
-*   **[Interactive Recommendation Dashboard (bonus-tool/index.html)](file:///d:/Project/AI%20Decision%20Matrix/bonus-tool/index.html)**: Sleek, client-side tool to calculate optimal candidate models instantly based on custom operational requirements.
-*   **[Visual Assets (assets/)](file:///d:/Project/AI%20Decision%20Matrix/assets/)**: Branding logo and dashboard visual previews.
+*   **[Core Report](./AI_Decision_Matrix_2026.md)**: 5-section consulting-grade analysis detailing foundation LLMs, coding models, agentic workflows, media models, and enterprise deployment platforms.
+*   **[Print-Ready PDF Report](./AI_Decision_Matrix_2026.pdf)**: Professionally typeset PDF version of the core report.
+*   **[Technical Bibliography](./research_sources.md)**: Complete list of API endpoints, academic literature, and testing benchmarks.
+*   **[Interactive Recommendation Dashboard](./bonus-tool/index.html)**: Sleek, client-side tool to calculate optimal candidate models instantly based on custom operational requirements.
+*   **[Visual Assets](./assets/)**: Branding logo and dashboard visual previews.
 
 ---
 
 ## How to Run the Selector Tool
 The recommendation dashboard is fully self-contained and runs offline in any modern web browser without server-side dependencies.
 
-### Launching on Windows (PowerShell):
-```powershell
-Start-Process "d:\Project\AI Decision Matrix\bonus-tool\index.html"
-```
-Or open the folder in VS Code and run the dashboard using the "Live Server" extension.
+### Standard Launch:
+*   Open the `bonus-tool` folder and double-click **`index.html`** to launch the dashboard directly in your web browser.
+*   Alternatively, open the folder in VS Code and run the dashboard using the "Live Server" extension.
 
 ---
 
@@ -43,13 +41,14 @@ AI Decision Matrix/
 ├── AI_Decision_Matrix_2026.md         # The main consulting-grade research report
 ├── AI_Decision_Matrix_2026.pdf         # Compiled print-ready PDF version of the report
 ├── research_sources.md                # Bibliographic index of API docs, papers, and benchmarks
-├── convert_pdf.py                     # Python compilation tool for local PDF rendering
 ├── assets/
 │   ├── decision_matrix_logo.png       # Geometric branding logo asset
 │   ├── dashboard-preview.png          # Dashboard landing interface mockup
 │   └── recommendation-example.png     # Active recommendation scorecard mockup
-└── bonus-tool/
-    └── index.html                     # Interactive HTML/CSS/JS selector dashboard
+├── bonus-tool/
+│   └── index.html                     # Interactive HTML/CSS/JS selector dashboard
+└── scripts/
+    └── convert_pdf.py                 # Python compilation tool for local PDF rendering
 ```
 
 ---
